@@ -1,0 +1,288 @@
+:root {
+  --blue: #b9d1d4;
+  --green: #65cdad;
+  --pink: #ec89b6;
+  --orange: #f38878;
+  --yellow: #f5c858;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background-color: var(--blue);
+  color: white;
+}
+
+header .header-container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 16px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* UNIVERSAL CONTAINER */
+section {
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+}
+
+section form {
+  min-width: 50%;
+  max-width: 50%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+section form h2 {
+  padding: 8px;
+  text-align: center;
+  color: var(--blue);
+}
+
+/* FORMS */
+.form-field,
+.form-field input,
+.form-field button {
+  min-width: 90%;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  min-width: 90%;
+}
+
+.form-field input {
+  border-radius: 0;
+  border: 1px solid var(--blue);
+}
+
+.form-field button {
+  background-color: var(--blue);
+  color: white;
+  border: 3px solid var(--blue);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form-field button:hover {
+  background-color: white;
+  color: var(--blue);
+  border: 3px solid var(--blue);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-or-signup {
+  padding: 8px;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.login-or-signup:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* THIS WEEK TABLE */
+.this-week {
+  min-width: 100%;
+}
+
+table,
+th,
+td {
+  /* border: 1px solid; */
+  border-collapse: collapse;
+}
+
+th {
+  padding: 5px 10px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+#row-1 {
+  width: 25%;
+}
+
+.col-1 {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.job-1 {
+  border: 1px solid var(--green);
+}
+
+.lastRow-job-1 input,
+.lastRow-job-1 input::placeholder {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.job-2 {
+  border: 1px solid var(--pink);
+}
+
+.lastRow-job-2 input,
+.lastRow-job-2 input::placeholder {
+  color: var(--pink);
+  font-weight: 600;
+}
+
+.job-3 {
+  border: 1px solid var(--blue);
+}
+
+.lastRow-job-3 input,
+.lastRow-job-3 input::placeholder {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+#msq-title {
+  color: var(--green);
+}
+
+#msq-hours-title,
+#msq-total-title {
+  color: white;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+}
+
+#twoU-title {
+  color: var(--pink);
+}
+
+#twoU-hours-title,
+#twoU-total-title {
+  color: white;
+  background-color: var(--pink);
+  border: 1px solid var(--pink);
+}
+
+#subtotal-title {
+  color: white;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.lastRow {
+  border: none;
+}
+
+.table-inputs input,
+.lastRow input {
+  border: none;
+  width: 95%;
+  height: 95%;
+  text-align: center;
+}
+
+/* STATUS */
+
+.status {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status table {
+  width: 25%;
+  margin: 20px 0 20px 2.5%;
+}
+
+.status table tr th {
+  width: 50%;
+  padding: 5px 10px;
+}
+
+#income-status {
+  border: 1px solid var(--orange);
+}
+
+#income-status-title {
+  color: white;
+  background-color: var(--orange);
+  text-align: left;
+}
+
+#income-status-total {
+  color: var(--orange);
+  text-align: right;
+}
+
+#hours-status {
+  border: 1px solid var(--yellow);
+}
+
+#hours-status-title {
+  color: white;
+  background-color: var(--yellow);
+  text-align: left;
+}
+
+#hours-status-total {
+  color: var(--yellow);
+  text-align: right;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 100vh;
+  padding: 20px;
+  margin-top: 60px;
+  min-height: 150px;
+  color: white;
+  background-color: var(--blue);
+}
